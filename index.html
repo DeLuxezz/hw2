@@ -48,9 +48,10 @@
                 <label for="opt4">Option 4</label>
             </div>
             <label for="phone">Your phone</label>
-            <input class="text" type="tel" name="" id="phone">
+            <input class="text phone" type="tel" name="" id="phone" pattern="[+]{1}[0-9]{11,14}" required placeholder="+380123456789">
+            <span class="validity"></span>
             <label for="password">Your password</label>
-            <input class="text" type="password" name="" id="password">
+            <input class="text" type="password" name="">
             <label for="message">Your message</label>
             <textarea class="text" name="" id="message" cols="30" rows="10"></textarea>
             <div class="buttons">

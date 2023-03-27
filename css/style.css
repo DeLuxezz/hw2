@@ -75,8 +75,20 @@ select,
 }
 
 .contact textarea{
+    padding-top: 5px;
     height: 160px;
-    resize: vertical;
+    resize: none;
+}
+
+.phone{
+    
+}
+
+.phone input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+    color: #009000;
 }
 
 .buttons{
@@ -100,4 +112,9 @@ select,
     background-color: darkslateblue ;
     box-shadow: 0 0 0 2px hotpink;
     color: hotpink;
+}
+
+input:focus,
+textarea:focus{
+    box-shadow: 0 0 5px 2px darkslateblue inset;
 }
